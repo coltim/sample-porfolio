@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap');
+
+:root {
+    --gray: #2c2d32;
+    --lightgray: #d9d9d9;
+    --orange: #f5b32f;
+    --black: #000;
+    --white: #fff;
+    --mainFont: 'Poppins', sans-serif;
+    --logoFont: 'Gloria Hallelujah', cursive;
+
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+}
+
+html {
+    font-size: 16px;
+    min-width: 200px
+}
+
+body {
+    background: var(--gray);
+    font-family: var(--mainFont);
+    color: var(--black);
+}

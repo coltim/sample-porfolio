@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfólió</title>
+    <link rel="stylesheet" href="./style/base.css" />
+    <link rel="stylesheet" href="./style/header.css" />
+  </head>
+  <body>
+    <header>
+      <a class="header-logo" href="#fooldal">Walter White</a>
+      <nav>
+        <input type="checkbox" id="nav-checkbox" class="nav-checkbox" />
+        <label for="nav-checkbox">
+          <div class="nav-checkbox_gomb">
+            <div class="nav-checkbox_vonal"></div>
+            <div class="nav-checkbox_vonal"></div>
+            <div class="nav-checkbox_vonal"></div>
+          </div>
+        </label>
+        <ul class="nav-list">
+          <li class="nav-list_elem"><a href="#fooldal">Fooldal</a></li>
+          <li class="nav-list_elem"><a href="#portfolio">Portfolio</a></li>
+          <li class="nav-list_elem"><a href="#rolam">Rolam</a></li>
+          <li class="nav-list_elem"><a href="#kapcsolat">Kapcsolat</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="fooldal">
+        <div class="fooldal-container">
+          <h1 class="fooldal-container_nev">Denem Tom</h1>
+          <h2 class="fooldal-container_foglalkozas">Webfejleszto</h2>
+          <button class="fooldal-container_gomb">Kapcsolat</button>
+        </div>
+        <img src="./assets/main.png" alt="profilkep" />
+      </section>
+      <section id="rolam">
+        <h2 class="rolam-cim">Rolam</h2>
+        <div class="rolam-container">
+          <div class="rolam-kepessegek">
+            <img src="./assets/main.png" alt="profilkep" />
+            <div class="rolam-kepessegek_container">
+              <p class="rolam-kepessegek_cim">Technologiak:</p>
+              <ul class="rolam-kepessegek_lista">
+                <li class="rolam-kepessegek_elem">HTML</li>
+                <li class="rolam-kepessegek_elem">CSS</li>
+                <li class="rolam-kepessegek_elem">JavaScript</li>
+                <li class="rolam-kepessegek_elem">Git</li>
+              </ul>
+            </div>
+          </div>
+          <div class="rolam-tartalom">
+            <h4 class="rolam-tartalom_udv">Hello, az en nevem</h4>
+            <h4 class="rolam-tartalom_nev">Denem Tom</h4>
+            <h4 class="rolam-tartalom_udv">webfejleszto</h4>
+            <p class="rolam-tartalom_szoveg">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Distinctio consequuntur quasi quia quae consectetur, aut
+              excepturi, iusto architecto assumenda enim iure explicabo
+              inventore ipsum nulla eius fugit, nam pariatur similique.
+            </p>
+            <div class="rolam-tartalom_container">
+              <button class="rolam-tartalom_gomb">Kapcsolat</button>
+              <button class="rolam-tartalom_gomb">CV</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="portfolio">
+        <h2 class="portfolio-cim">Portfolio</h2>
+        <div class="portfolio-container">
+          <div class="portfolio project">
+            <img src="./assets/project.png" alt="projektjeim" />
+            <div class="portfolio-project_container">
+              <h3>Portfolio oldal</h3>
+              <a href="#">
+                <img src="./assets/github-mark.png" alt="github icon" />
+              </a>
+              <a href="#">
+                <img src="./assets/arrow-right.png" alt="github icon" />
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-container">
+          <div class="portfolio project">
+            <img src="./assets/project.png" alt="projektjeim" />
+            <div class="portfolio-project_container">
+              <h3>Portfolio oldal</h3>
+              <a href="#">
+                <img src="./assets/github-mark.png" alt="github icon" />
+              </a>
+              <a href="#">
+                <img src="./assets/arrow-right.png" alt="github icon" />
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-container">
+          <div class="portfolio project">
+            <img src="./assets/project.png" alt="projektjeim" />
+            <div class="portfolio-project_container">
+              <h3>Portfolio oldal</h3>
+              <a href="#">
+                <img src="./assets/github-mark.png" alt="github icon" />
+              </a>
+              <a href="#">
+                <img src="./assets/arrow-right.png" alt="github icon" />
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-container">
+          <div class="portfolio project">
+            <img src="./assets/project.png" alt="projektjeim" />
+            <div class="portfolio-project_container">
+              <h3>Portfolio oldal</h3>
+              <a href="#">
+                <img src="./assets/github-mark.png" alt="github icon" />
+              </a>
+              <a href="#">
+                <img src="./assets/arrow-right.png" alt="github icon" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="kapcsolat">
+        <h2 class="kapcsolat-cim">Kapcsolat</h2>
+        <h3 class="kapcsolat-szoveg">Lepj velem kapcsolatba</h3>
+        <form action="https://formspree.io/f/xgebweay" method="POST">
+          <input type="text" id="name" name="nev" placeholder="Nev" />
+          <input type="email" id="email" name="email" placeholder="Email" />
+          <textarea name="message" id="message" placeholder="Uzenet"></textarea>
+          <input type="submit" value="Kuld" />
+        </form>
+        <ul class="kapcsolat-social">
+          <li class="kapcsolat-social_elem">
+            <a href="https://www.twitter.com">
+              <img src="./assets/twitter.png" alt="twitter" />
+            </a>
+          </li>
+          <li class="kapcsolat-social_elem">
+            <a href="https://www.linkedin.com">
+              <img src="./assets/linkedin.png" alt="linkedin" />
+            </a>
+          </li>
+          <li class="kapcsolat-social_elem">
+            <a href="https://www.github.com">
+              <img src="./assets/github.png" alt="github" />
+            </a>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <footer>
+      <div>
+        <p>Copyright</p>
+        <div>&copy;</div>
+        <p>2022 Cseke</p>
+      </div>
+      <div>
+        <a href="#fooldal"
+          ><img
+            src="https://img.icons8.com/ios-glyphs/30/null/long-arrow-up.png"
+        /></a>
+      </div>
+    </footer>
+  </body>
+</html>
