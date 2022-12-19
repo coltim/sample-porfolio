@@ -6,6 +6,7 @@ header {
     position: fixed;
     width: 100%;
     padding: 2%;
+    
 }
 
 .header-logo {
@@ -13,9 +14,6 @@ header {
     color: var(--black);
 }
 
-nav {
-    width: 70%;
-}
 
 .nav-checkbox {
     display: none;
@@ -28,7 +26,7 @@ nav {
     justify-content: space-around;
     align-items: center;
     flex-direction: column;
-
+    cursor: pointer;
 }
 
 .nav-checkbox_vonal {
@@ -39,30 +37,68 @@ nav {
 
 .nav-list {
     display: flex;
-    justify-content: space-evenly;
+    flex-direction: column;
+    position: fixed;
+    height: 100%;
+    width: 50vw;
+    min-width: 150px;
+    max-width: 200px;
+    margin-top: 2%;
+    background: var(--orange);
+    right: -200px;
+    visibility: hidden;
+    transition: right 0.5s, visibility 0.4s;
 }
 
-.nav-list a {
+.nav-list_elem {
+    width: 100%;
+    margin: 0 auto;
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.nav-list_elem a {
     color: var(--black);
+    padding: 20px 0;
+    margin: 2vh 0;
+}
+
+.nav-list_elem:hover {
+    background: rgba(0 , 0, 0, 0.1);
+}
+
+.nav-checkbox:checked ~ .nav-list {
+    visibility: visible;
+    right: 0;
+
 }
 
 @media screen and (min-width: 576px){
-    header{
-        background-color: white;
-    }
 }    
 @media screen and (min-width: 768px){
-    header{
-        background: rgb(135, 32, 32);
+
+    .nav-checkbox_gomb {
+        display: none;
+    }
+
+    .nav-list {
+        visibility: visible;
+        position: static;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 75vw;
+        max-width: 70vw;
+    }
+
+    .nav-list_elem a {
+        margin: 0;
+        padding: 2px 0;
     }
 }   
-@media screen and (min-width: 992px){
-    header{
-        background: rgb(36, 163, 91);
-    }
+@media screen and (min-width: 992px){  
 }
 @media screen and (min-width: 1200px){
-    header{
-        background: rgba(14, 26, 133, 0.7);
-    }
 }
