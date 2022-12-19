@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./style/base.css" />
     <link rel="stylesheet" href="./style/header.css" />
     <link rel="stylesheet" href="./style/fooldal.css" />
+    <link rel="stylesheet" href="./style/rolam.css" />
   </head>
   <body>
     <header>
@@ -44,11 +45,15 @@
         <div class="fooldal-kor_masodik"></div>
         <div class="fooldal-kor_harmadik"></div>
       </section>
-      <section id="rolam">
-        <h2 class="rolam-cim">Rolam</h2>
+      <section id="rolam" class="rolam">
+        <h2 class="rolam-cim section-cim">Rolam</h2>
         <div class="rolam-container">
           <div class="rolam-kepessegek">
-            <img src="./assets/main.png" alt="profilkep" />
+            <img
+              class="rolam-kepessegek_kep"
+              src="./assets/main.png"
+              alt="profilkep"
+            />
             <div class="rolam-kepessegek_container">
               <p class="rolam-kepessegek_cim">Technologiak:</p>
               <ul class="rolam-kepessegek_lista">
@@ -70,14 +75,16 @@
               inventore ipsum nulla eius fugit, nam pariatur similique.
             </p>
             <div class="rolam-tartalom_container">
-              <button class="rolam-tartalom_gomb">Kapcsolat</button>
-              <button class="rolam-tartalom_gomb">CV</button>
+              <button class="rolam-tartalom_gomb gomb-kapcsolat">
+                Kapcsolat
+              </button>
+              <button class="rolam-tartalom_gomb gomb-cv">CV</button>
             </div>
           </div>
         </div>
       </section>
-      <section id="portfolio">
-        <h2 class="portfolio-cim">Portfolio</h2>
+      <section id="portfolio" class="portfolio">
+        <h2 class="portfolio-cim section-cim">Portfolio</h2>
         <div class="portfolio-container">
           <div class="portfolio project">
             <img src="./assets/project.png" alt="projektjeim" />
@@ -135,8 +142,8 @@
           </div>
         </div>
       </section>
-      <section id="kapcsolat">
-        <h2 class="kapcsolat-cim">Kapcsolat</h2>
+      <section id="kapcsolat" class="kapcsolat">
+        <h2 class="kapcsolat-cim section-cim">Kapcsolat</h2>
         <h3 class="kapcsolat-szoveg">Lepj velem kapcsolatba</h3>
         <form action="https://formspree.io/f/xgebweay" method="POST">
           <input type="text" id="name" name="nev" placeholder="Nev" />
