@@ -7,6 +7,7 @@
     <title>Portfólió</title>
     <link rel="stylesheet" href="./style/base.css" />
     <link rel="stylesheet" href="./style/header.css" />
+    <link rel="stylesheet" href="./style/fooldal.css" />
   </head>
   <body>
     <header>
@@ -14,11 +15,11 @@
       <nav>
         <input type="checkbox" id="nav-checkbox" class="nav-checkbox" />
         <label for="nav-checkbox">
-          <div class="nav-checkbox_gomb">
-            <div class="nav-checkbox_vonal"></div>
-            <div class="nav-checkbox_vonal"></div>
-            <div class="nav-checkbox_vonal"></div>
-          </div>
+          <span class="nav-checkbox_gomb">
+            <span class="nav-checkbox_vonal"></span>
+            <span class="nav-checkbox_vonal"></span>
+            <span class="nav-checkbox_vonal"></span>
+          </span>
         </label>
         <ul class="nav-list">
           <li class="nav-list_elem"><a href="#fooldal">Fooldal</a></li>
@@ -29,13 +30,19 @@
       </nav>
     </header>
     <main>
-      <section id="fooldal">
+      <section id="fooldal" class="fooldal">
         <div class="fooldal-container">
           <h1 class="fooldal-container_nev">Denem Tom</h1>
-          <h2 class="fooldal-container_foglalkozas">Webfejleszto</h2>
+          <h2 class="fooldal-container_foglalkozas">
+            <span class="fooldal-container_kiemeles"> Frontend </span>
+            Webfejleszto
+          </h2>
           <button class="fooldal-container_gomb">Kapcsolat</button>
         </div>
-        <img src="./assets/main.png" alt="profilkep" />
+        <img class="fooldal-kep" src="./assets/main.png" alt="profilkep" />
+        <div class="fooldal-kor_elso"></div>
+        <div class="fooldal-kor_masodik"></div>
+        <div class="fooldal-kor_harmadik"></div>
       </section>
       <section id="rolam">
         <h2 class="rolam-cim">Rolam</h2>
