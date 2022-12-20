@@ -1,0 +1,101 @@
+.kapcsolat {
+    padding: 3vh 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.kapcsolat-szoveg {
+    color: var(--orange);
+    margin: 1rem 0;
+    letter-spacing: 0.1rem;
+}
+
+.kapcsolat-form {
+    background: var(--lightgray);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 85%;
+    max-width: 700px;
+}
+
+.kapcsolat-form [type="text"],
+.kapcsolat-form [type="email"],
+.kapcsolat-form textarea {
+    background: var(--lightgray);
+    width: 95%;
+    margin: 1.5vh auto;
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 0.2rem;
+    border: 2px solid var(--black);
+    padding: 0.6rem;
+}
+
+.kapcsolat-form [type="text"]:focus,
+.kapcsolat-form [type="email"]:focus,
+.kapcsolat-form textarea:focus{
+    background: var(--white);
+    outline: none;
+}
+
+.kapcsolat-form textarea {
+    height: 25vh;
+}
+
+.kapcsolat-form [type="submit"]{
+    background: var(--orange);
+    border: 2px solid var(--black);
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+    font-weight: 700;
+    width: 90%;
+    padding: 1rem;
+    margin: 3vh 0 1vh;
+    cursor: pointer;
+}
+
+.kapcsolat-form [type="submit"]:hover{
+text-shadow: 2px 2px 4px rgba(48, 48, 48, 0.6);
+    box-shadow: 1px 1px 5px 1px rgba(48, 48, 48, 0.6);
+}
+
+.kapcsolat-social{
+    display: flex;
+    justify-content: space-between;
+    width: 85%;
+    max-width: 700px;
+    margin: 50px;
+}
+
+.kapcsolat-social_elem{
+    background-color: var(--lightgray);
+    width: 50px;
+    height: 50px;
+    border: 2px solid var(--orange);
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    padding-top: 5px;
+}
+
+.kapcsolat-social_elem:hover{
+    background-color: var(--white);
+}
+
+@media screen and (min-width: 576px){
+    .kapcsolat-szoveg{
+        font-size: 1.5rem;
+        letter-spacing: 0.3rem;
+    }
+    .kapcsolat-form [type="submit"]{
+        width: 200px;
+        align-self: flex-end;
+        margin-right: 2.5%;
+    }
+}
